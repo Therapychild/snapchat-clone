@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="card">
+      <section class="card-header">
+        <img id="logo" src="./images/logo.png"/>
+        <img id="creator" src="./images/001_head_a.svg"/>
+      </section>
+      <section class="card-body">
+        <div class="account-info">
+          <img id="avatar" src=""/>
+          <div id="personal-info">
+            <div id="name">Name</div>
+            <div id="location">Location</div>
+          </div>
+        </div>
+        <div id="picture-container">
+          <img id="picture" src=""/>
+          <div id="nav-btns">
+            <button id="previous-btn" class="nav-btn" onclick="previous()">-</button>
+            <button id="forward-btn" class="nav-btn" onclick="next()">+</button>
+          </div>
+        </div>
+      </section>
+      <section class="card-footer">
+        <div class="icons">
+          <button id="heart-btn" class="footer-btn" onclick="toggleBackground('heart-btn')">
+            <img id="heartIcon" src="./images/icon-heart.png"/>
+          </button>
+          <button id="comment-btn" class="footer-btn" onclick="comment()">
+            <img id="commentIcon" src="./images/icon-comment.png"/>
+          </button>
+          <button id="comment-btn" class="footer-btn" onclick="mail()">
+            <img id="mailIcon" src="./images/icon-dm.png"/>
+          </button>
+        </div>
+        <div class="row bold">
+          <span id="likes">0</span><span>likes</span>
+        </div>
+        <div class="row">
+          <span id="user-name" class="bold"></span><div id="comment">comment</div>
+        </div>
+      </section>
+      <script src="./index.js"></script>
+    </body>
+  </div>
+</html>
